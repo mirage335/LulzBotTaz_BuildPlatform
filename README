@@ -1,3 +1,5 @@
+Adjustable build platform for LulzBot Taz, using high-strength aluminum plate.
+
 _Stackup_
 1) Standard LulzBot Taz Y-axis LM10UU linear bearings.
 2) Aluminum carrier plate, 13" x 12" x 3/16".
@@ -6,6 +8,28 @@ _Stackup_
 5) Foam tape at edges of build plate, 3/16"x1.5"x12" * 2, from 3M.
 6) Standard LulzBot silicone heater, borosilicate, and PEI sheet assembly.
 7) Low profile clamps, 3D printed.
+
+_NichromeHeater_
+Optional. Single-sided copper-clad board is used as an insulated heatspreader, nichrome wire taped to the back side with kapton. Do not solder nichrome, and consider laminating the top side with PET film from LulzBot to prevent corrosion.
+
+_NichromeCalculations_
+Assuming a fixed length of nichrome wire, divided into fixed-length (fixed-resistance) elements, wired series or parallel, a suitable number of parallel configurations emerges from the following equations.
+
+Note the parallels term is squared because the length of wire is divided, then the paths for current are multiplied, exponentially affecting total resistance.
+
+elements = 36
+
+resistance = resistancePerElement = restancePerFoot = 1.64
+
+totalOhms = (elements * resistance) / (parallels^2)
+
+mod(elements,parallels) == 0 #Elements must be divisible by parallels.
+
+36*1.64/6^2 = 1.64Ohms
+
+50*3.21/10^2 = 1.605Ohms
+
+
 
 _Usage_
 Mount the carrier plates to place the 13" (long) sides parallel to the Y-axis motion. This should provide 0.5" mounting tabs for corner screws and clamps at front and back. Print the clamps with ABS, and clip on. Electrical tape may be used to shim the clamps, but generally, foam tape will provide excellent adhesion.
