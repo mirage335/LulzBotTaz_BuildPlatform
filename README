@@ -1,0 +1,18 @@
+_Stackup_
+1) Standard LulzBot Taz Y-axis LM10UU linear bearings.
+2) Aluminum carrier plate, 13" x 12" x 3/16".
+3) M3 corner screws, springs from HomeDepot Everbilt Spring Assortment Kit.
+4) Aluminum carrier plate, 13" x 12" x 3/16".
+5) Foam tape at edges of build plate, 3/16"x1.5"x12" * 2, from 3M.
+6) Standard LulzBot silicone heater, borosilicate, and PEI sheet assembly.
+7) Low profile clamps, 3D printed.
+
+_Usage_
+Mount the carrier plates to place the 13" (long) sides parallel to the Y-axis motion. This should provide 0.5" mounting tabs for corner screws and clamps at front and back. Print the clamps with ABS, and clip on. Electrical tape may be used to shim the clamps, but generally, foam tape will provide excellent adhesion.
+
+Binder clips may be used instead of 3D printed clips if necessary. Additionally, alternative heating elements may be mounted between the aluminum plates. This is particularly helpful while experimenting with alternative build surfaces.
+
+
+_References_
+http://www.amazon.com/3M-Foam-Insulation-Insulate-Camper/dp/B00TYZTFTE/ref=sr_1_8?ie=UTF8&qid=1427504074&sr=8-8&keywords=foam+tape+insulation
+http://www.homedepot.com/p/Everbilt-Spring-Assortment-Kit-84-Pack-15642/202045461
